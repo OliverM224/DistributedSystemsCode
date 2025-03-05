@@ -20,3 +20,14 @@ def post_tweet():
         print(response)
 
 post_tweet()
+
+"""
+AWS grab JSON data
+    sensorJSON = json.dumps(event)#converting sensor data into dictionary format.
+    sensorData = json.loads(sensorJSON)#converting inputted data from dictionary to string format accessible to python
+
+    print(sensorData['dateTime'])
+    print(sensorData['Location'])
+    print(sensorData['Severity'])
+
+"""
