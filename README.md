@@ -25,7 +25,7 @@ Installation Guide:
 
    folderName/python/tweepyfolders
    
-   its important that the tweepy library is stored inside a directory called python, otherwise AWS won't recognise it.
+   It's important that the tweepy library is stored inside a directory called python, otherwise AWS won't recognise it.
 
    You can then import it into AWS using the lambda functions layer system. Just click on the layers option at the bottom of your lambda function's page, and drag and drop the zip.
 
