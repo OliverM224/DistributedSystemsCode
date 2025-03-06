@@ -3,7 +3,7 @@ import tweepy
 #importing libraries
 
 def lambda_handler(event, context):
-    # TODO implement
+    
 
     sensorJSON = json.dumps(event)#converting sensor data into dictionary format.
     sensorData = json.loads(sensorJSON)#converting inputted data from dictionary to string format accessible to python
@@ -13,10 +13,10 @@ def lambda_handler(event, context):
     Severity = sensorData['Severity']
 
     client = tweepy.Client(
-                consumer_key = ('4vXXR6mVX0FHY15qWqkRCFth2'),
-                consumer_secret=('5C70WZaj1xpnE0r9kZpGJBjiFPK1E28txIx6mi8eDZC4eJ7XYd'),
-                access_token=('1895139284509691904-j95JzD2lLIDypBk5jXmumwB7mnjLpX'),
-                access_token_secret=('Y1ZFR8FiaO2prStZSwzaaqabWNJ22xB3XLL6kg8APjADZ')
+                consumer_key = ('API_KEY'),
+                consumer_secret=('SECRET_API_KEY'),
+                access_token=('ACCESS_TOKEN'),
+                access_token_secret=('SECRET_ACCESS_TOKEN')
         ) 
     tweet_text = "Attention! There is a {} risk flooding alert close to the {}. \nTime of incident: {}".format(Severity, Location, DateTime) +""
 
