@@ -24,11 +24,12 @@ Installation Guide:
    Tweepy is a python library used to make easy api calls to twitter. In order to import it to your lambda function, take the tweepy files from this repo, and package them into a zip file with the following structure
 
    folderName/python/tweepyfolders
+   
    its important that the tweepy library is stored inside a directory called python, otherwise AWS won't recognise it.
 
    You can then import it into AWS using the lambda functions layer system. Just click on the layers option at the bottom of your lambda function's page, and drag and drop the zip.
 
-4. Test it!
+5. Test it!
    Open the test JSON file and add your test data to the event json window! An example is listed below:
    {
      "dateTime": "05/03/2025",
