@@ -14,9 +14,10 @@ Installation Guide:
 2. Create the lambda function:
    Log into your AWS account and create your own lambda function.
    <ul>
-     When configuring your lambda function, choose the Python 3.9 runtime and x86 architecture.
+     <li>When configuring your lambda function, choose the Python 3.9 runtime and x86 architecture.</li>
+      <li>Copy and paste the contents of twitter.py into the lambda function, make sure to add your API keys into the highlighted tweepy client area.</li>
    </ul>
-   Copy and paste the contents of twitter.py into the lambda function, make sure to add your API keys into the highlighted tweepy client area.
+   
    Speaking of tweepy...
 
 3. Import Tweepy
